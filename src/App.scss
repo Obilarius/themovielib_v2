@@ -1,12 +1,13 @@
+// VARIABLES
 :root {
   --primary: #032541;
   --secondary: #21d07a;
   --white: #fff;
 }
 
+// BODY
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -32,29 +33,31 @@ h1 {
   margin: auto;
 }
 
+// NAVBAR
 nav.navbar {
   background: linear-gradient(150deg, var(--primary) 0%, var(--secondary) 130%);
   color: var(--white);
   padding: 20px;
+  // border-bottom: 10px solid;
+  // border-image-slice: 1;
+  // border-image-source: linear-gradient(to right, var(--primary), var(--secondary));
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    .links {
+      margin-left: auto;
+      display: flex;
+
+      .link {
+        margin-left: 15px;
+      }
+    }
+  }
 }
 
-nav.navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+// CONTENT
 
-nav.navbar .container .links {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.content {
 }
-
-nav.navbar .container .links .link {
-  margin-left: 15px;
-}
-/*# sourceMappingURL=App.css.map */

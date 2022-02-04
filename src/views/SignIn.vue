@@ -9,7 +9,7 @@
 
 <script setup>
 import { ref } from "@vue/reactivity"
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
+import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth"
 import { useRouter } from "vue-router"
 
 const email = ref("")
